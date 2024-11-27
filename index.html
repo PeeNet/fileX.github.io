@@ -1,0 +1,356 @@
+<!-- Navbar with search bar, upload button, and file count -->
+<nav>
+    <div class="navbar-container">
+        <input type="text" id="fileSearch" placeholder="Search files..." oninput="searchFiles()">
+        <button id="uploadBtn" onclick="triggerFileUpload()">Upload Files</button>
+        <span id="fileCount">Total Files: 13</span> <!-- Display total number of files -->
+    </div>
+</nav>
+<!-- File List Section -->
+<section id="files" class="file-list-section">
+    <h2>Uploaded Files</h2>
+
+    <!-- File Links with buttons for Delete, Open, and Print -->
+    <div class="file-item">
+        <a href="/54G1 ISOLATION/To drain 54G2 Penstock.docx" target="_blank" class="file-link">To drain 54G2 Penstock.docx</a>
+        <button class="open-btn" onclick="openFile('/54G1 ISOLATION/To drain 54G2 Penstock.docx')">Open</button>
+        <button class="print-btn" onclick="printFile('/files/ACTIVITY 1-PETER.pdf')">Print</button>
+    </div>
+
+    <div class="file-item">
+        <a href="/54G1 ISOLATION/To Ire 54G1 Governor Mechanically.docx" target="_blank" class="file-link">To Ire 54G1 Governor Mechanically.docx</a>
+        <button class="open-btn" onclick="openFile('/54G1 ISOLATION/To Ire 54G1 Governor Mechanically.docx')">Open</button>
+        <button class="print-btn" onclick="printFile('/54G1 ISOLATION/To Ire 54G1 Governor Mechanically.docx')">Print</button>
+    </div>
+    <div class="file-item">
+        <a href="/54G1 ISOLATION/Essential IT Security Tips.pdf" target="_blank" class="file-link">Essential IT Security Tips.pdf</a>
+        <button class="open-btn" onclick="openFile('/54G1 ISOLATION/Essential IT Security Tips.pdf')">Open</button>
+        <button class="print-btn" onclick="printFile('/54G1 ISOLATION/Essential IT Security Tips.pdf')">Print</button>
+    </div>
+<div class="file-item">
+    <a href="/54G1 ISOLATION/To drain 54G2 Penstock.pdf" target="_blank" class="file-link">To drain 54G2 Penstock.pdf</a>
+    <button class="open-btn" onclick="openFile('/54G1 ISOLATION/To drain 54G2 Penstock.pdf')">Open</button>
+    <button class="print-btn" onclick="printFile('/54G1 ISOLATION/To drain 54G2 Penstock.pdf')">Print</button>
+
+</div>
+<div class="file-item">
+    <a href="/54G1 ISOLATION/To Ire 54G1 Governor Mechanically.pdf" target="_blank" class="file-link">To Ire 54G1 Governor Mechanically.pdf</a>
+    <button class="open-btn" onclick="openFile('/54G1 ISOLATION/To Ire 54G1 Governor Mechanically.pdf')">Open</button>
+    <button class="print-btn" onclick="printFile('/54G1 ISOLATION/To Ire 54G1 Governor Mechanically.pdf')">Print</button>
+
+</div>
+<div class="file-item">
+    <a href="/54G1 ISOLATION/To isolate  4S and 5S Buses.pdf" target="_blank" class="file-link">To isolate  4S and 5S Buses.pdf</a>
+    <button class="open-btn" onclick="openFile('/54G1 ISOLATION/To isolate  4S and 5S Buses.pdf')">Open</button>
+    <button class="print-btn" onclick="printFile('/54G1 ISOLATION/To isolate  4S and 5S Buses.pdf')">Print</button>
+
+</div>
+<div class="file-item">
+    <a href="/54G1 ISOLATION/To isolate 1S Bus under.docx.pdf" target="_blank" class="file-link">To isolate 1S Bus under.docx.pdf</a>
+    <button class="open-btn" onclick="openFile('/54G1 ISOLATION/To isolate 1S Bus under.docx.pdf')">Open</button>
+    <button class="print-btn" onclick="printFile('/54G1 ISOLATION/To isolate 1S Bus under.docx.pdf')">Print</button>
+
+</div>
+<div class="file-item">
+    <a href="/54G1 ISOLATION/To isolate 1S Bus under.pdf" target="_blank" class="file-link">To isolate 1S Bus under.pdf</a>
+    <button class="open-btn" onclick="openFile('/54G1 ISOLATION/To isolate 1S Bus under.pdf')">Open</button>
+    <button class="print-btn" onclick="printFile('/54G1 ISOLATION/To isolate 1S Bus under.pdf')">Print</button>
+
+</div>
+<div class="file-item">
+    <a href="/54G1 ISOLATION/To isolate 1S Bus.pdf" target="_blank" class="file-link">To isolate 1S Bus.pdf</a>
+    <button class="open-btn" onclick="openFile('/54G1 ISOLATION/To isolate 1S Bus.pdf')">Open</button>
+    <button class="print-btn" onclick="printFile('/54G1 ISOLATION/To isolate 1S Bus.pdf')">Print</button>
+</div>
+<div class="file-item">
+    <a href="/54G1 ISOLATION/To isolate 1S, 4S and 5S Buses.pdf" target="_blank" class="file-link">To isolate 1S, 4S and 5S Buses.pdf</a>
+    <button class="open-btn" onclick="openFile('/54G1 ISOLATION/To isolate 1S, 4S and 5S Buses.pdf')">Open</button>
+    <button class="print-btn" onclick="printFile('/54G1 ISOLATION/To isolate 1S, 4S and 5S Buses.pdf')">Print</button>
+</div>
+<div class="file-item">
+    <a href="/54G1 ISOLATION/To isolate 54G1 Excitation system under PC14 #000991.pdf" target="_blank" class="file-link">To isolate 54G1 Excitation system under PC14 #000991.pdf</a>
+    <button class="open-btn" onclick="openFile('/54G1 ISOLATION/To isolate 54G1 Excitation system under PC14 #000991.pdf')">Open</button>
+    <button class="print-btn" onclick="printFile('/54G1 ISOLATION/To isolate 54G1 Excitation system under PC14 #000991.pdf')">Print</button>
+</div>
+<div class="file-item">
+    <a href="/54G1 ISOLATION/To isolate 54G1 Governor electrically under PC14 #000714.pdf" target="_blank" class="file-link">To isolate 54G1 Governor electrically under PC14 #000714.pdf</a>
+    <button class="open-btn" onclick="openFile('/54G1 ISOLATION/To isolate 54G1 Governor electrically under PC14 #000714.pdf')">Open</button>
+    <button class="print-btn" onclick="printFile('/54G1 ISOLATION/To isolate 54G1 Governor electrically under PC14 #000714.pdf')">Print</button>
+</div>
+<div class="file-item">
+    <a href="/54G1 ISOLATION/To Isolate 54G1 Governor electrically.pdf" target="_blank" class="file-link">To Isolate 54G1 Governor electrically.pdf</a>
+    <button class="open-btn" onclick="openFile('/54G1 ISOLATION/To Isolate 54G1 Governor electrically.pdf')">Open</button>
+    <button class="print-btn" onclick="printFile('/54G1 ISOLATION/To Isolate 54G1 Governor electrically.pdf')">Print</button>
+</div>
+</section>
+
+
+
+<!-- Hidden file input for uploading -->
+<input type="file" id="fileInput" style="display: none;" multiple onchange="handleFileUpload(event)">
+
+<script>
+// Load file data from localStorage when the page is loaded
+ let fileList = JSON.parse(localStorage.getItem('fileList')) || [
+//     { name: "To drain 54G2 Penstock.docx", url: "/54G1 ISOLATION/To drain 54G2 Penstock.docx" },
+//     { name: "To Ire 54G1 Governor Mechanically.docx", url: "/54G1 ISOLATION/To Ire 54G1 Governor Mechanically.docx" },
+   { name: "Essential IT Security Tips.pdf", url: "/54G1 ISOLATION/Essential IT Security Tips.pdf" }
+];
+
+// Function to search files
+function searchFiles() {
+    let searchQuery = document.getElementById('fileSearch').value.toLowerCase();
+    let fileLinks = document.querySelectorAll('.file-link');
+    
+    fileLinks.forEach(function(link) {
+        let fileName = link.textContent.toLowerCase();
+        if (fileName.includes(searchQuery)) {
+            link.parentElement.style.display = 'block'; // Show the file item if it matches
+        } else {
+            link.parentElement.style.display = 'none'; // Hide the file item if it doesn't match
+        }
+    });
+}
+
+// Function to delete a file item
+function deleteFile(button) {
+    let fileItem = button.parentElement; // Get the parent div of the button (file item)
+    let fileName = fileItem.querySelector('.file-link').textContent;
+
+    // Remove from fileList
+    fileList = fileList.filter(file => file.name !== fileName);
+
+    // Update the UI
+    fileItem.remove();
+    updateFileCount();
+
+    // Save updated fileList to localStorage
+    localStorage.setItem('fileList', JSON.stringify(fileList));
+}
+
+// Function to open the file in a new tab
+function openFile(fileUrl) {
+    window.open(fileUrl, '_blank');
+}
+
+// Function to print the file (open in browser and print)
+function printFile(fileUrl) {
+    let printWindow = window.open(fileUrl, '_blank');
+    printWindow.onload = function() {
+        printWindow.print();
+    };
+}
+
+// Function to trigger file upload
+function triggerFileUpload() {
+    document.getElementById('fileInput').click();
+}
+
+// Function to handle file upload
+function handleFileUpload(event) {
+    const files = event.target.files;
+    for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        
+        // Add new file to the fileList (simulate file URL generation)
+        const newFile = {
+            name: file.name,
+            url: URL.createObjectURL(file)  // Use object URL for the uploaded file
+        };
+        fileList.push(newFile);
+        
+        // Create new file item in the list
+        const fileItem = document.createElement('div');
+        fileItem.classList.add('file-item');
+        fileItem.innerHTML = ` 
+            <a href="${newFile.url}" target="_blank" class="file-link">${file.name}</a>
+            <button class="delete-btn" onclick="deleteFile(this)">Delete</button>
+            <button class="open-btn" onclick="openFile('${newFile.url}')">Open</button>
+            <button class="print-btn" onclick="printFile('${newFile.url}')">Print</button>
+        `;
+        document.getElementById('files').appendChild(fileItem);
+    }
+    
+    // Update the file count after upload
+    updateFileCount();
+
+    // Save updated fileList to localStorage
+    localStorage.setItem('fileList', JSON.stringify(fileList));
+}
+
+// Function to update the total number of files in the navbar
+function updateFileCount() {
+    document.getElementById('fileCount').textContent = `Total Files: ${fileList.length}`;
+}
+
+// Initial file count display and restoration of file list
+function restoreFileList() {
+    const filesContainer = document.getElementById('files');
+    fileList.forEach(file => {
+        const fileItem = document.createElement('div');
+        fileItem.classList.add('file-item');
+        fileItem.innerHTML = ` 
+            <a href="${file.url}" target="_blank" class="file-link">${file.name}</a>
+            <button class="delete-btn" onclick="deleteFile(this)">Delete</button>
+            <button class="open-btn" onclick="openFile('${file.url}')">Open</button>
+            <button class="print-btn" onclick="printFile('${file.url}')">Print</button>
+        `;
+        filesContainer.appendChild(fileItem);
+    });
+    updateFileCount();
+}
+
+// Load the file list on page load
+window.onload = restoreFileList;
+</script>
+
+<style>
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#fileSearch {
+    padding: 12px;
+    margin-right: 15px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+#fileSearch:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+#uploadBtn {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#uploadBtn:hover {
+    background-color: #0056b3;
+}
+
+#fileCount {
+    font-size: 16px;
+    color: #555;
+}
+
+/* File List Section Styling */
+.file-list-section {
+    margin: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.file-item:hover {
+    transform: translateY(-5px);
+    background-color: #f1f1f1;
+}
+
+.file-link {
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: none;
+    flex-grow: 1;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.file-link:hover {
+    color: #0056b3;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background-color: #FF5733;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.open-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.open-btn:hover {
+    background-color: #45a049;
+}
+
+.print-btn {
+    background-color: #FFC107;
+    color: black;
+}
+
+.print-btn:hover {
+    background-color: #e0a800;
+}
+
+/* File Upload Styling */
+input[type="file"] {
+    display: none;
+}
+
+/* Animation for file count */
+@keyframes countAnimation {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+#fileCount {
+    animation: countAnimation 0.5s ease-in-out;
+}
+</style>
